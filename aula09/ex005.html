@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+
+    <style>
+        body{
+            background-color: rgb(65, 151, 151);
+            font: normal 15pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        Primeiros passos com o DOM
+    </h1>
+    <p>
+        Resultado:
+    </p>
+    <div id="msg"> click here</div>
+
+    <script>        
+        var p1 =  document.getElementById('msg');
+        var d =  window.document.querySelector('div#msg');
+        d.style.background = 'blue';
+        
+
+    </script>
+
+</body>
+</html>
