@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+ Velocidade   <input type="number" name="txtVelocidade" id="txtVelocidade">km/h
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        v = document.querySelector('input#txtVelocidade');
+        function verificar(){
+            velocidade = Number(v.value);
+            res.innerHTML = `Velocidade Atual é <strong>${velocidade}km/h</strong>`;
+            if(velocidade>80){
+                res.innerHTML += `<p> Você ultrapassou o limite de velocidade(80km/h)</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

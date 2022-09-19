@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    local de nascimento dessa puta <input type="text" name="txt" id="txt" >
+    <input type="button" value="verificar" onclick=nacionalidade()>
+
+    <div id="resultado"></div>
+
+    <script>
+        
+        function nacionalidade(){
+            var v = document.querySelector('input#txt');
+            var br = "Brasil";
+            var valorDaCaixaDeTexto = v.value;
+            console.log(`br: ${br} || valorDaCaixaDeTexto: ${valorDaCaixaDeTexto}`);
+            console.log(v)
+            if (valorDaCaixaDeTexto == br) {
+            resultado.innerHTML = `Você é brasileiro`;          
+        }else{
+            resultado.innerHTML = `Você é estrangeiro}`;
+        }
+
+
+        }
+        
+    </script>
+
+</body>
+</html>
